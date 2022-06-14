@@ -1,0 +1,49 @@
+.wrapper__nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 2px;
+	margin: 5px;
+	width: 60%;
+
+	.logoShop {
+		min-width: 5rem;
+		padding: 2px;
+		margin: 2px;
+		max-width: 10%;
+	}
+
+	.navbar {
+		flex: 1 1 70%;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 2px;
+		margin: 0 2px;
+		list-style-type: none;
+		align-items: center;
+		justify-content: space-around;
+
+		li {
+			padding: 5px;
+
+			a {
+				text-decoration: none;
+				color: rgb(71, 71, 71);
+				font-size: 1.3rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.wrap__telWorkTime {		
+		padding: 2px;
+		margin-left: 2px;
+	}
+}
+
+@media all and (max-width: 510px) {
+	.wrapper__nav {		
+		justify-content: center;
+	}
+}

@@ -1,0 +1,401 @@
+@import "nullStyle.scss";
+
+$colorBlue: rgb(3, 138, 187);
+$colorBtnFooter: rgb(4, 160, 180);
+$colorLigtGrey: rgb(206, 206, 206);
+$marginBottom: 4.5rem;
+
+%btn {
+	background: lighten($colorBtnFooter, 3%);
+	border: 1px solid darken($colorBtnFooter, 4%);
+	border-radius: 40px;
+	font-size: 1.2rem;
+	padding: 15px 40px;
+	margin: 30px 10px;
+	cursor: pointer;
+	box-shadow: 0px 2px 0 darken($colorBtnFooter, 5%), 2px 4px 6px darken($colorBtnFooter, 2%);
+	transition: all 150ms linear;
+
+	&:hover {
+		background: darken($colorBtnFooter, 1.5%);
+		border: 1px solid rgba(#000, 0.05);
+		box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+		color: lighten(#fff, 18%);
+		text-decoration: none;
+		text-shadow: -1px -1px 0 darken($colorBtnFooter, 9.5%);
+		transition: all 250ms linear;
+	}
+}
+
+%part__0 {
+	padding: 2px;
+	width: 100%;
+	margin-bottom: $marginBottom;
+	color: gray;
+}
+
+%agreements {
+	font-size: 1rem;
+	text-align: center;
+	margin: 5px;
+
+	a {
+		color: $colorBlue;
+	}
+}
+
+%close {
+	font-size: 2.5rem;
+	margin: 0 0.8rem;
+	color: gray;
+	cursor: pointer;
+
+	&:hover {
+		color: red;
+	}
+}
+
+@mixin sections($justifyContent, $margin) {
+	display: flex;
+	justify-content: $justifyContent;
+	margin-bottom: $margin;
+}
+
+.wrapper {
+	font-family: serif;
+	font-size: 1.5rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		font-size: 3.5rem;
+		margin: 10px 0;
+		line-height: 5rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	span {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	small {
+		font-size: 0.75rem;
+	}
+
+	@import "header.scss";
+
+	@import "nav.scss";
+
+	.wrapper__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 2px;
+		width: 60%;
+		margin: 15px 0;
+
+		.wrap__main {
+			display: flex;
+			flex-direction: column;
+			margin: 5px;
+
+			p {
+				color: rgb(71, 71, 71);
+			}
+
+			.part1 {
+				@include sections(space-between, $marginBottom);
+				margin-top: 3rem;
+
+				.wrap__part1__text {
+					padding: 5px;
+
+					.btn__part1 {
+						margin-left: 0;
+						@extend %btn;
+					}
+				}
+
+				.wrap__part1__img {
+					padding: 5px;
+					min-width: 40%;
+
+					img {
+						object-fit: cover;
+						margin: 0;
+						width: 90%;
+					}
+				}
+			}
+
+			.part2 {
+				@include sections(space-between, $marginBottom);
+
+				h2 {
+					margin: 0;
+				}
+
+				.wrap__part2__text {
+					text-align: center;
+				}
+			}
+
+			#part3__0 {
+				@extend %part__0;
+			}
+
+			.part3 {
+				@include sections(space-between, $marginBottom);
+				align-items: center;
+
+				.wrap__part3__img {
+					padding: 5px;
+					min-width: 40%;
+
+					img {
+						object-fit: cover;
+						margin: 0;
+						width: 80%;
+					}
+				}
+
+				.wrap__part3__text {
+					width: 40%;
+
+					p {
+						margin-top: 20px;
+					}
+				}
+			}
+
+			#part4__0 {
+				@extend %part__0;
+			}
+
+			.part4 {
+				@include sections(flex-start, $marginBottom);
+				flex-direction: column;
+
+				.wrap__part4__picText {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					min-width: 40%;
+					flex-wrap: wrap;
+				}
+
+				.wrap__part4__images {
+					flex: 0 1 30%;
+					display: flex;
+					flex-wrap: wrap;
+
+					.wrap__part4__pic {
+						padding: 5px;
+						margin: 7px;
+						flex: 1 1 25%;
+					}
+				}
+
+				.wrap__part4__text {
+					width: 50%;
+					min-width: 10rem;
+					padding-left: 20px;
+					border-left-width: 5px;
+					border-left-style: solid;
+					border-image: linear-gradient(to bottom, $colorBlue 0 50%, white 50% 100%) 1 100%;
+
+					p {
+						margin: 15px 0;
+					}
+				}
+			}
+
+			#part5__0 {
+				@extend %part__0;
+			}
+
+			.part5 {
+				margin-bottom: $marginBottom;
+				flex-wrap: wrap;
+
+				.part5__head {
+					border-bottom-width: 5px;
+					border-bottom-style: solid;
+					border-image: linear-gradient(to right, $colorBlue 0 20%, white 0% 100%) 1 10%;
+					padding-bottom: 0.8rem;
+				}
+
+				.wrap__part5__textPicForm {
+					display: flex;
+					margin: 1.5rem 0;
+					justify-content: space-between;
+
+					.wrap__part5__textPic {
+						display: flex;
+						flex-direction: column;
+						min-width: 50%;
+
+						img {
+							margin: 1rem 0;
+							object-fit: cover;
+							width: 90%;
+						}
+					}
+
+					.form5 {
+						flex: 1 1 auto;
+						display: flex;
+						flex-direction: column;
+
+						h3 {
+							margin-bottom: 1rem;
+
+							span {
+								color: $colorBlue;
+							}
+						}
+
+						.form-control {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							padding: 5px;
+							margin-bottom: 12px;
+
+							small {
+								visibility: hidden;
+							}
+
+							input {
+								border: 1px solid $colorLigtGrey;
+								border-radius: 5px;
+								min-width: 100%;
+								min-height: 2.5rem;
+								padding-left: 15px;
+
+								&:focus {
+									outline: none;
+									border: 1px solid $colorLigtGrey;
+									box-shadow: 0 4px 9px 0 $colorBlue;
+								}
+							}
+						}
+
+						.form-control__nameSpares {
+							margin: 0;
+						}
+
+						.form-control.error small {
+							visibility: visible;
+							color: red;
+						}
+
+						.form-control.success small {
+							visibility: hidden;
+						}
+
+						#form-control__tel5 {
+							margin-bottom: 0;
+						}
+
+						.wrap__btn__part5 {
+							display: flex;
+							justify-content: center;
+
+							.btn__part5 {
+								@extend %btn;
+							}
+						}
+
+						.agreement {
+							@extend %agreements;
+						}
+					}
+				}
+			}
+
+			.part6 {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: $marginBottom;
+
+				h2 {
+					text-align: center;
+				}
+
+				.wrap__part6 {
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+
+					.wrap__part6__article {
+						display: flex;
+						flex-direction: column;
+						flex-wrap: wrap;
+						flex: 0 1 30%;
+						align-items: center;
+						text-align: center;
+						padding: 2px;
+						margin: 5px;
+
+						p {
+							margin: 15px 0;
+
+							span {
+								color: gray;
+								font-size: 1.3rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "footer.scss";
+
+@import "modalWin.scss";
+
+@media all and (max-width: 1530px) {
+	section,
+	.wrap__part5__textPicForm {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media all and (max-width: 580px) {
+	.wrapper {
+		%btn {
+			font-size: 1rem;
+			padding: 7px 20px;
+			margin: 15px 5px;
+		}
+
+		font-size: 1rem;
+
+		h2 {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+
+		h3 {
+			font-size: 1.2rem;
+		}
+
+		span {
+			font-size: 0.8rem;
+		}
+
+		small {
+			font-size: 0.55rem;
+		}
+	}
+}

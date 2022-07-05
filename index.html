@@ -23,6 +23,7 @@
 		</header>
 
 		<nav class="wrapper__nav">
+			<div class="transparency"></div>
 			<img class="logoShop" src="./images/scooter_icon.png" alt="kick scooter">
 			<ul class="navbar">
 				<li><a href="#part4__0">запчасти</a></li>
@@ -34,11 +35,11 @@
 				<img class="logoShop__inContainer" src="./images/scooter_icon.png" alt="kick scooter">
 				<input type="checkbox" id="check-menu">
 				<label for="check-menu">
-				<div class="burger-line"></div>
-				<div class="burger-line"></div>
-				<div class="burger-line"></div>
-				<div class="burger-line"></div>
-			</label>
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+					<div class="burger-line"></div>
+				</label>
 				<ul class="main-menu" id="main-menu">
 					<li><a href="#part4__0">запчасти</a></li>
 					<li><a href="#part5__0">стоимость</a></li>
@@ -52,6 +53,7 @@
 			</div>
 		</nav>
 
+		<div class="parallax"></div>
 		<main class="wrapper__main">
 			<div class="wrap__main">
 				<section class="part1">
@@ -232,67 +234,29 @@
 				<img id="footer_pic" src="./images/kugoo-s1-4.jpg" alt="kick scooter kugoo-s1">
 			</div>
 		</footer>
-	</div>
-	<div class="modalWindow">
-		<div class="modalWindow__part1__content">
-			<div class="modalWindow__part1__content__close">&times;</div>
-			<form class="modalWindow__part1__content__form" name="formPart1" method="get" action="#">
-				<h4>Заказать запчасть</span></h4>
-				<div class="form-control">
-					<label for="userName">Имя <sup><b> &#10034;</b></sup></label>
-					<input type="text" id="nameUser" name="userName" value="">
-					<small>Error message</small>
-				</div>
-				<div class="form-control">
-					<label for="tel_part1">Телефон <sup><b> &#10034;</b></sup></label>
-					<input type="text" id="tel_part1" name="tel" class="tel_part1" value="">
-					<small>Error message</small>
-				</div>
-				<div class="form-control">
-					<label for="email">E-mail <sup><b> &#10034;</b></sup></label>
-					<input type="text" id="email" name="email" value="">
-					<small>Error message</small>
-				</div>
-				<button type="submit" class="modalWindow__part1__content__btn"><strong>Отправить</strong></button>
-				<div class="modalWindow__part1__content__agreement">
-					<p><sup><b> &#10034;</b></sup>-пожалуйста заполните поле</p>
-					<p>Нажимая на кнопку, вы принимаете <a href="https://s683237.lpmotortest.com/regulation.html"
-							target="blank">Положение</a> и <a href="https://s683237.lpmotortest.com/consent.html"
-							target="blank">Согласие</a>
-						на обработку персональных данных.</p>
-				</div>
-			</form>
-		</div>
-		<div class="modalWindow__part__answer">
-			<div class="modalWindow__part__answer__close">&times;</div>
-			<div class="modalWindow__part__answer__content">
-				<div class="modalWindow__part__answer__content__good__wrap">
-					<div class="modalWindow__part__answer__content__good"></div>
-				</div>
-				<p>Спасибо!</p>
-				<p>Ваша заявка принята.</p>
-				<p>В ближайшее время мы с вами свяжимся!</p>
-				<button class="modalWindow__part__answer__close__btn">Ок</button>
-			</div>
-		</div>
-		<div class="modalWindow__footer">
-			<div class="modalWindow__footer__content">
-				<div class="modalWindow__footer__content__close">&times;</div>
-				<form class="modalWindow__footer__content__form" name="formFooter" method="get" action="#">
+		</di>
+		<div class="modalWindow">
+			<div class="modalWindow__part1__content">
+				<div class="modalWindow__part1__content__close">&times;</div>
+				<form class="modalWindow__part1__content__form" name="formPart1" method="get" action="#">
 					<h4>Заказать запчасть</span></h4>
 					<div class="form-control">
-						<label for="userNameFooter">Имя <sup><b> &#10034;</b></sup></label>
-						<input type="text" id="userNameFooter" name="userNameFooter" value="">
+						<label for="userName">Имя <sup><b> &#10034;</b></sup></label>
+						<input type="text" id="nameUser" name="userName" value="">
 						<small>Error message</small>
 					</div>
 					<div class="form-control">
-						<label for="telFooter">Телефон <sup><b> &#10034;</b></sup></label>
-						<input type="text" id="telFooter" name="telFooter" class="telFooter" value="">
+						<label for="tel_part1">Телефон <sup><b> &#10034;</b></sup></label>
+						<input type="text" id="tel_part1" name="tel" class="tel_part1" value="">
 						<small>Error message</small>
 					</div>
-
-					<button type="submit" class="modalWindow__footer__content__btn"><strong>Отправить</strong></button>
-					<div class="modalWindow__footer__content__agreement">
+					<div class="form-control">
+						<label for="email">E-mail <sup><b> &#10034;</b></sup></label>
+						<input type="text" id="email" name="email" value="">
+						<small>Error message</small>
+					</div>
+					<button type="submit" class="modalWindow__part1__content__btn"><strong>Отправить</strong></button>
+					<div class="modalWindow__part1__content__agreement">
 						<p><sup><b> &#10034;</b></sup>-пожалуйста заполните поле</p>
 						<p>Нажимая на кнопку, вы принимаете <a href="https://s683237.lpmotortest.com/regulation.html"
 								target="blank">Положение</a> и <a href="https://s683237.lpmotortest.com/consent.html"
@@ -301,10 +265,49 @@
 					</div>
 				</form>
 			</div>
-		</div>
-	</div>
+			<div class="modalWindow__part__answer">
+				<div class="modalWindow__part__answer__close">&times;</div>
+				<div class="modalWindow__part__answer__content">
+					<div class="modalWindow__part__answer__content__good__wrap">
+						<div class="modalWindow__part__answer__content__good"></div>
+					</div>
+					<p>Спасибо!</p>
+					<p>Ваша заявка принята.</p>
+					<p>В ближайшее время мы с вами свяжимся!</p>
+					<button class="modalWindow__part__answer__close__btn">Ок</button>
+				</div>
+			</div>
+			<div class="modalWindow__footer">
+				<div class="modalWindow__footer__content">
+					<div class="modalWindow__footer__content__close">&times;</div>
+					<form class="modalWindow__footer__content__form" name="formFooter" method="get" action="#">
+						<h4>Заказать запчасть</span></h4>
+						<div class="form-control">
+							<label for="userNameFooter">Имя <sup><b> &#10034;</b></sup></label>
+							<input type="text" id="userNameFooter" name="userNameFooter" value="">
+							<small>Error message</small>
+						</div>
+						<div class="form-control">
+							<label for="telFooter">Телефон <sup><b> &#10034;</b></sup></label>
+							<input type="text" id="telFooter" name="telFooter" class="telFooter" value="">
+							<small>Error message</small>
+						</div>
 
-	<script defer src="js/main.min.js"></script>
+						<button type="submit"
+							class="modalWindow__footer__content__btn"><strong>Отправить</strong></button>
+						<div class="modalWindow__footer__content__agreement">
+							<p><sup><b> &#10034;</b></sup>-пожалуйста заполните поле</p>
+							<p>Нажимая на кнопку, вы принимаете <a
+									href="https://s683237.lpmotortest.com/regulation.html" target="blank">Положение</a>
+								и <a href="https://s683237.lpmotortest.com/consent.html" target="blank">Согласие</a>
+								на обработку персональных данных.</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script defer src="js/main.min.js"></script>
 </body>
 
 </html>

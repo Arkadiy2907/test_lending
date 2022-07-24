@@ -1,3 +1,4 @@
 # test_lending
 
-создать лендинг на основе https://s683237.lpmotortest.com/
+create lending how here: https://s683237.lpmotortest.com/
+look this site: https://testsitekugo.netlify.app

@@ -1,0 +1,80 @@
+.modalWindow__footer__content {
+	display: none;
+	flex-direction: column;
+	margin: 50px auto;
+	padding: 5px;
+	cursor: default;
+	max-width: 24rem;
+	align-items: flex-end;
+	background-color: #fff;
+	border-radius: 10px;
+
+	.modalWindow__footer__content__close {
+		@extend %close;
+	}
+
+	.modalWindow__footer__content__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+
+		h4 {
+			font-size: 1.6rem;
+			margin-bottom: 10px;
+		}
+
+		& > div {
+			margin: 10px;
+		}
+
+		.form-control {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 5px;
+
+			small {
+				visibility: hidden;
+			}
+
+			sup b {
+				color: red;
+			}
+
+			input {
+				border: 1px solid $colorLigtGrey;
+				border-radius: 20px;
+				min-width: 18rem;
+				min-height: 2.5rem;
+				padding-left: 15px;
+
+				&:focus {
+					outline: none;
+					border: 1px solid $colorLigtGrey;
+					box-shadow: 0 4px 9px 0 $colorBlue;
+				}
+			}
+		}
+
+		.form-control.error small {
+			visibility: visible;
+			color: red;
+		}
+
+		.modalWindow__footer__content__btn {
+			@extend %btn;
+			margin: 10px;
+			max-width: 11rem;
+		}
+
+		.modalWindow__footer__content__agreement {
+			@extend %agreements;
+			color: rgb(85, 85, 85);
+
+			b {
+				color: red;
+			}
+		}
+	}
+}

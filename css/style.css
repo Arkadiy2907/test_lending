@@ -192,20 +192,20 @@
           align-items: center;
   padding: 2px;
   margin: 5px;
-  width: 60%;
+  width: 70%;
 }
 
 .wrapper .wrapper__nav .logoShop {
   padding: 2px;
   margin: 2px;
   max-width: 10%;
-  width: 10%;
+  width: 6%;
 }
 
 .wrapper .wrapper__nav .navbar {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
